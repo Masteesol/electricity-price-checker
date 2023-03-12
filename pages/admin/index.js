@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import { unsetToken } from "../../lib/auth";
 import Link from "next/link";
 import Router from "next/router";
-import AuthContext from "../../lib/authContext";
+import AuthContext from "../../lib/AuthContext";
 import styles from "../../styles/sass/Layout.module.scss";
 import adminStyles from "../../styles/sass/Admin.module.scss";
 import utilityStyles from "../../styles/sass/Utilities.module.scss";

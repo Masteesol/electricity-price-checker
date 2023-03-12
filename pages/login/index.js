@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useContext } from "react";
 import Header from "../../components/Header";
 import { setToken } from "../../lib/auth";
-import AuthContext from "../../lib/authContext";
+import AuthContext from "../../lib/AuthContext";
 import { useRouter } from "next/router";
 import styles from "../../styles/sass/Layout.module.scss";
 import utilityStyles from "../../styles/sass/Utilities.module.scss";
