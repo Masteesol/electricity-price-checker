@@ -2,11 +2,11 @@ import Head from "next/head";
 import Header from "../../../components/Header";
 import PricesInfographic from "../../../components/PricesInfographic";
 import PricesTable from "../../../components/PricesTable";
-import { server } from "../../../config/index";
 import styles from "../../../styles/sass/Layout.module.scss";
+import areaData from "../../../data/areas";
 
-export default function Area({ prices, data, currentId }) {
-  const location = data.filter((item) => item.area_code === currentId);
+export default function Area({ prices, currentId }) {
+  const location = areaData.filter((item) => item.area_code === currentId);
   const filtered_prices = prices.map((price) => {
     return [price.NOK_per_kWh.toFixed(2), price.time_start];
   });
@@ -51,13 +51,10 @@ export const getServerSideProps = async (context) => {
       `https://www.hvakosterstrommen.no/api/v1/prices/${year}/${month}-${day}_${context.params.id}.json`
     );
     const prices = await res_prices.json();
-    const res_data = await fetch(`${server}/api/areas`);
-    const data = await res_data.json();
     const currentId = context.params.id;
     return {
       props: {
         prices,
-        data,
         currentId,
       },
     };

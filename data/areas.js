@@ -1,4 +1,4 @@
-export const areas = [
+const areas = [
   {
     area_code: "NO1",
     area_name: "Oslo / Øst-Norge",
@@ -20,3 +20,5 @@ export const areas = [
     area_name: "Bergen / Vest-Norge",
   },
 ];
+
+export default areas;
