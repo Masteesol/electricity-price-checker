@@ -1,0 +1,25 @@
+@import "partials/colors.scss";
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: $color-nav;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.ul {
+    display: inline;
+    display: flex;
+    padding-right: 2rem;
+}
+
+.li {
+    list-style-type: none;
+    padding-inline: 1rem;
+    color: $color-light;
+    &:hover {
+        color: $color-light;
+    }
+}

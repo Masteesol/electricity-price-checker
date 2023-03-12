@@ -1,0 +1,61 @@
+
+@import "partials/colors.scss";
+
+.bgwarning {
+    background-color: $color-warning;
+}
+.bginactive {
+    background-color: $color-inactive;
+}
+
+.bgsecondary {
+    background-color: $color-secondary;
+}
+
+.textwarning {
+    color: $color-warning;
+}
+
+.textgood {
+    color: $color-good;
+}
+
+.boxshadow {
+    box-shadow: 1px 1px 5px 1px #a3a3a3;
+}
+
+.button {
+    @extend .boxshadow;
+    color: $color-light;
+    background-color: $color-secondary;
+    border: none;
+    font-size: large;
+    margin: 1rem 0 1rem 0;
+    padding: 0.2rem 0 0.2rem 0;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        background-color: $color-nav;
+    }
+    a {
+        color: white;
+    }
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    input, textarea {
+        @extend .boxshadow;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        border: none;
+    }
+    textarea {
+        min-height: 6rem;
+    }
+}

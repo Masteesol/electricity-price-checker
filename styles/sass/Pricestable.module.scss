@@ -1,0 +1,17 @@
+@import "partials/colors.scss";
+@import "Utilities.module.scss";
+
+.container {
+    color: $color-secondary;
+    width: 100%;
+
+    th {
+        padding-top: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    td {
+        font-size: 3rem;
+        text-align: center;
+    }
+}

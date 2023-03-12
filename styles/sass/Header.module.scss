@@ -1,0 +1,11 @@
+@import "partials/colors.scss";
+
+.header {
+    text-align: center;
+    padding: 2rem;
+    padding-top: 6rem;
+    background-color: $color-secondary;
+    color: white;
+    margin: 0;
+    margin-bottom: 3rem;
+}
